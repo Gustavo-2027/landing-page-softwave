@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+
+    header {
+        justify-content: space-evenly;
+    }
+    
+    #texto {
+        display: inline-block;
+        width: 55%;
+    }
+
+    #img {
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iemail {
+        width: 50vw;
+        
+    }
+
+    #isenha {
+        width: 50vw;
+    }
+
+    .btn {
+        display: flex;
+        margin: 0 auto;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+
+    #img > img {
+        max-width: 60vw;
+    }
+}
