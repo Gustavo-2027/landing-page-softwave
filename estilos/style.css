@@ -131,6 +131,7 @@ form {
 .btn {
     border-radius: 15px;
     border: none;
+    margin-bottom: 15px;
 }
 
 #ibtn {
