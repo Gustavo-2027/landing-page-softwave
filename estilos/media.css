@@ -8,12 +8,16 @@
 
     nav {
         justify-content: space-evenly;
+        margin: 0 auto;
     }
     
     #texto {
         display: inline-block;
         width: 70%;
-        
+    }
+
+    #texto > p {
+        font-size: 1em;
     }
 
     #img {
@@ -63,5 +67,9 @@
 
     #img > img {
         max-width: 60vw;
+    }
+
+    #texto > p {
+        font-size: 1em;
     }
 }
