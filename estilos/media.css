@@ -1,55 +1,94 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
-    header > h2 {
-        margin: 0 auto;
+    .cont {
+        width: 98vw;
+        height: 97vh;
     }
 
-    nav {
-        justify-content: space-evenly;
-        margin: 0 auto;
-    }
-    
-    #texto {
-        display: inline-block;
-        width: 70%;
-    }
 
-    #texto > p {
-        font-size: 1em;
-    }
-
-    #img {
-        display: none;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-    }
-
-    form {
+    header {
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
         align-items: center;
+        margin: 25px 20px;
+
     }
 
-    #iemail {
-        width: 50vw;
+    .tit {
+        display: block;
+        padding: 12px 35% 10px 25px;
         
     }
 
-    #isenha {
-        width: 50vw;
+    .menu {
+        width: 0vw;
+        display: contents;
     }
 
-    .btn {
+    main {
         display: flex;
-        margin: 0 auto;
-        margin-bottom: 15px;
-
+        justify-content: center;
+        width: 98vw; 
     }
 
-   
+    .txt {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0px 30px 05px;
+        width: 45%;
+        height: 50vh;
+        transition: 1s;
+        padding: 0px 0px;
+        
+    }
+
+    .txt > h2 {
+        width: 100%;
+        padding: 0px 5px;
+        text-align: start;
+        font-size: 2.5em;
+    }
+
+    .txt > .ES{
+        width: 100%;
+    }
+
+    .txt > p {
+        text-indent: 2px;
+        font-size: 1.2em;
+        margin: 0px;
+        text-align: left;
+        margin: 5px;
+    }
+
+    #iemail , #isenha{
+        margin-top: 12px;
+        width: 35vw;
+        padding: 12px;
+        border: none;
+        border-radius: 15px;
+        font-weight: 500;
+    }
+
+    #ibtn {
+        margin-top: 10px;
+        margin-right: 70px;
+        padding: 10px 40px;
+        border-radius: 15px;
+    }
+
+    img {
+        height: 70vh;
+        width: 50vw;
+        max-width: 62vw;
+    }
+    
 }
 
 
@@ -63,13 +102,107 @@
 
 
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*TABLET*/
+@media screen and (min-width: 992px) {
 
-    #img > img {
-        max-width: 60vw;
+
+    .cont {
+        width: 98vw;
+        height: 97vh;
     }
 
-    #texto > p {
-        font-size: 1em;
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 30px;
+        padding: 0px 20px;
+
     }
+
+    .tit {
+        display: block;
+        padding: 12px 35% 10px 0px;
+        
+    }
+
+    .menu {
+        width: 0vw;
+        gap: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        width: 90vw; 
+    }
+
+    .txt {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0px 30px 10vw;
+        width: 40vw;
+        height: 10vh;
+        transition: 1s;
+        padding: 0px 0px;
+        
+    }
+
+    .txt > h2 {
+        align-self: center;
+        width: 100%;
+        padding: 0px 5px;
+        margin-left: 80px;
+        text-align: start;
+        font-size: 2.5em;
+    }
+
+    .txt > .ES{
+        width: 100%;
+    }
+
+    .txt > p {
+        align-self: center;
+        text-indent: 2px;
+        font-size: 1.2em;
+        margin: 0px;
+        text-align: left;
+        margin: 5px;
+        margin-left: 80px;
+    }
+    form {
+        margin: 0 auto;
+    }
+
+    #iemail , #isenha{
+        align-self: flex-start;
+        margin-top: 12px;
+        width: 30vw;
+        padding: 12px;
+        border: none;
+        border-radius: 15px;
+        font-weight: 500;
+        margin-left: 80px;
+    }
+
+    #ibtn {
+        margin: 10px 70px 10px 140px;
+        padding: 10px 40px;
+        border-radius: 15px;
+    }
+
+    img {
+        height: 80vh;
+        width: 50vw;
+        max-width: 62vw;
+        padding: 0;
+        margin-right: 50px;
+    }
+    
 }

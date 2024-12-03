@@ -2,8 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Parkinsans", sans-serif;
@@ -12,153 +12,140 @@
 body {
     background-color: #222222;
     color: white;
-    height: 96vh;
-    width: 98vw;
 }
 
-header {
-    margin: 35px 30px;
-    padding: 0px 20px;
+.cont {
+    width: 100vw;
+    height: 100vh;
+}
+
+.tit {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column;
+    justify-content: center;
     align-items: center;
+    padding: 25px 0px;
 }
 
-header > h2 {
+.tit > h1 {
     font-weight: 550;
-    cursor: default;
+    padding: 0px;
+    color: white;
+    cursor: pointer;
     text-shadow: 1px 1px  rgba(255, 255, 255, 0.397);
 }
 
-header > h2:hover {
-    color: rgb(71, 218, 203);
+.tit:hover > h1{
+    color: #47dacb;
+    transition: 0.8s;
+} 
+
+.menu {
+    width: 100vw;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu > a {
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.6;
+}
+
+.menu > a:hover {
+    color: #47dacb;
+    transition: 0.6s;
+}
+
+#login-es {
+    border: 2px solid #47dacb;
+    color: white;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+#login-es:hover {
+    border: none;
+    background-color: #47dacb;
     transition: 0.8s;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav > a{
-    padding: 5px 10px;
-    margin: 8px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.6;
-}
-
-nav > a:hover {
-    color: rgb(71, 218, 203);
-    font-weight: 600;
-    transition: 0.6;
-}
-
-.especial {
-    border: 2px solid rgb(71, 218, 203);
-    border-radius: 10px;
-    transition: 0.6;
-}
-
-.especial:hover {
-    background-color: rgb(71, 218, 203);
-    font-weight: 550;
-    color: white;
-    transition: 0.8;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    width: 98vw;
-    margin-top: 40px;
-}
-
-#texto {
-    font-family: "Poppins", sans-serif;
+.txt {
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 40%;
-    margin-left: 45px;
-    margin: 80px 10px 30px 25px;
+    padding: 10px 30px;
+    transition: 1s;
     
 }
 
-#texto > h2 {
-    align-self: flex-start;
-    font-size: 2.5em;
-    
+.txt > h2 {
+    text-align: center;
+    cursor: pointer;
 }
 
-.azul {
-    align-self: flex-start;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    color: rgb(71, 218, 203);
+.txt > .ES {
+    font-weight: bolder;
+    color: #47dacb;
+    margin-bottom: 10px;
 }
 
-#texto > p{
+.txt > p {
+    text-indent: 10px;
     text-align: justify;
-    font-size: 1.2em;
+    margin: 0px 15px;
+    margin-bottom: 10px;
 }
 
-form {
-    margin: 20px 0px; 
-    
+.txt > form {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 75vw;
+    margin: 5px 5px;
+    border: none;
 }
 
-#iemail {
+#iemail , #isenha{
+    font-weight: 500;
+    text-indent: 5px;
+    border: none;
+    padding: 12px;
     margin: 12px 0px;
-    width: 35vw;
-    padding: 12px;
-    border: none;
-    border-radius: 15px;
-    font-weight: 500;
-}
-
-#isenha {
-    width: 35vw;
-    padding: 12px;
-    border: none;
-    border-radius: 15px;
-    font-weight: 500;
+    margin-bottom: 0px;
+    border-radius: 8px;
 }
 
 .btn {
-    border-radius: 15px;
     border: none;
-    margin-bottom: 15px;
+    background-color: #222222;
 }
 
 #ibtn {
-    align-self: center;
-    padding: 10px 60px;
-    font-size: 1.2em;
-    border-radius: 15px;
     border: none;
-    background-color: rgb(71, 218, 203);
+    padding: 8px 15px;
+    margin-top: 7px;
+    border-radius: 10px;
+    background-color: #47dacb;
     color: white;
     font-weight: bold;
+    font-size: 1.2em;
     cursor: pointer;
+    transition: .8s;
+    margin-left: 10px;
 }
 
 #ibtn:hover {
     background-color: #2B7C74;
+    transition: .8s;
 }
 
-#img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.imagem {
 
-#img > img {
-    height: 70vh;
-    max-width: 62vw;
+    transition: 1s;
 }
