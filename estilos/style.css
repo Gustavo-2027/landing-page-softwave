@@ -75,6 +75,11 @@ body {
     transition: 0.8s;
 }
 
+main {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
 .txt {
     display: flex;
     flex-flow: column wrap;
@@ -87,7 +92,11 @@ body {
 
 .txt > h2 {
     text-align: center;
-    cursor: pointer;
+    cursor:default ;
+}
+
+.txt > h2:hover {
+    color: #47dacb;
 }
 
 .txt > .ES {
@@ -95,6 +104,10 @@ body {
     color: #47dacb;
     margin-bottom: 10px;
 }
+
+.txt > .ES:hover {
+    color: white;
+} 
 
 .txt > p {
     text-indent: 10px;
@@ -121,31 +134,28 @@ body {
     border-radius: 8px;
 }
 
-.btn {
-    border: none;
-    background-color: #222222;
-}
-
 #ibtn {
-    border: none;
-    padding: 8px 15px;
-    margin-top: 7px;
-    border-radius: 10px;
-    background-color: #47dacb;
     color: white;
+    background-color: #47dacb;
+    padding: 8px 15px;
+    margin: 7px 0px 10px 10px;
+    border: none;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
     transition: .8s;
-    margin-left: 10px;
 }
 
 #ibtn:hover {
-    background-color: #2B7C74;
+    background-color: white;
+    color: #47dacb;
     transition: .8s;
 }
 
-.imagem {
-
+img {
+    margin: 0;
+    height: 30vh;
+    width: 100vw;
     transition: 1s;
 }
