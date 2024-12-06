@@ -156,7 +156,8 @@ main {
 
 img {
     margin: 0;
-    height: 30vh;
+    padding: 0;
+    height: 40vh;
     width: 100vw;
     transition: 1s;
 }
