@@ -87,7 +87,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px 30px;
-    transition: 1s;
+    
     
 }
 
@@ -159,5 +159,5 @@ img {
     padding: 0;
     height: 40vh;
     width: 100vw;
-    transition: 1s;
+    transition: 0.8s;
 }
