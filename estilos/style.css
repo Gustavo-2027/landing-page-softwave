@@ -2,11 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
     font-family: "Parkinsans", sans-serif;
+}
+
+:root {
+    --cor-fundo: #47dacb;
 }
 
 body {
@@ -30,15 +33,9 @@ body {
 .tit > h1 {
     font-weight: 550;
     padding: 0px;
-    color: white;
-    cursor: pointer;
+    cursor: default;
     text-shadow: 1px 1px  rgba(255, 255, 255, 0.397);
 }
-
-.tit:hover > h1{
-    color: #47dacb;
-    transition: 0.8s;
-} 
 
 .menu {
     width: 100vw;
@@ -57,22 +54,11 @@ body {
     transition: 0.6;
 }
 
-.menu > a:hover {
-    color: #47dacb;
-    transition: 0.6s;
-}
-
 #login-es {
-    border: 2px solid #47dacb;
+    border: 2px solid var(--cor-fundo);
     color: white;
     transition: 0.6s;
     border-radius: 10px;
-}
-
-#login-es:hover {
-    
-    background-color: #47dacb;
-    transition: 0.8s;
 }
 
 main {
@@ -87,8 +73,6 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px 30px;
-    
-    
 }
 
 .txt > h2 {
@@ -96,19 +80,11 @@ main {
     cursor:default ;
 }
 
-.txt > h2:hover {
-    color: #47dacb;
-}
-
-.txt > .ES {
+#subtitle2 {
     font-weight: bolder;
-    color: #47dacb;
+    color: var(--cor-fundo);
     margin-bottom: 10px;
 }
-
-.txt > .ES:hover {
-    color: white;
-} 
 
 .txt > p {
     text-indent: 10px;
@@ -135,9 +111,9 @@ main {
     border-radius: 8px;
 }
 
-#ibtn {
+#enviar {
     color: white;
-    background-color: #47dacb;
+    background-color: var(--cor-fundo);
     padding: 8px 15px;
     margin: 7px 0px 10px 10px;
     border: none;
@@ -145,12 +121,6 @@ main {
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
-    transition: .8s;
-}
-
-#ibtn:hover {
-    background-color: white;
-    color: #47dacb;
     transition: .8s;
 }
 
